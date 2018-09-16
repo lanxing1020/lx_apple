@@ -1,0 +1,1087 @@
+@import url("base.css");
+
+header{
+    width: 100%;
+    height: 40px;
+    background: #444;
+   
+}
+.container{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header div{
+    font-size: 10px;
+    color: #a8a8aa;
+}
+nav{
+    width: 100%;
+    height: 44px;
+    background: #333333;
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav .container{
+    justify-content: space-between;
+}
+nav ul li{
+    cursor: pointer;
+}
+nav ul li a,i{
+    font-size: 12px;
+    color: white;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+}
+nav .iconfont{
+    font-size: 20px;
+}
+nav ul li:hover a,
+nav ul li:hover i{
+    color: #b7b7b7;
+}
+.bag{
+    width: 291px;
+    height: 318px;
+    background: white;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    position: fixed;
+    top: 90px;
+    border-radius: 5px;
+    display: none;
+    z-index: 999;
+}
+.bag li{
+    width: 248px;
+    height: 44px;
+    border-bottom: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.bag li:first-child{
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -9px;
+    background: white;
+}
+.bag li:nth-child(2){
+    height: 88px;
+    line-height: 87px;
+    color: #888888;
+    font-size: 14px;
+    text-align: center;
+}
+.bag li:last-child{
+    border-bottom: none;
+}
+.bag li .iconbox{
+    width: 20px;
+    height: 20px;
+    margin-top: 11px;
+    float: left;
+    /*background: pink;*/
+    margin-right: 10px;
+}
+.bag li .iconbox .iconfont{
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    color: #0070c9;
+}
+.bag li .text{
+    width: 100px;
+    height: 100%;
+    color: #0070c9;
+    line-height: 43px;
+    font-size: 14px;
+}
+.bag li:hover .text{
+    text-decoration: underline;
+}
+.meaubox{
+    width: 100%;
+    /*height: 900px;*/
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    z-index: 999;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    transition: all .5s;
+}
+.meaubox .top{
+    width: 100%;
+    height: 101px;
+    border-bottom: 1px solid #282828;
+    box-sizing: border-box;
+    position: relative;
+}
+.meaubox .top ul{
+    width: 100%;
+    height: 48px;
+
+}
+.meaubox .top ul li{
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-left: 6px;
+}
+.meaubox .top ul li .iconfont{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 48px;
+}
+.meaubox .top ul li:first-child{
+    margin-right: 284px;
+}
+.meaubox .top ul li a:hover .iconfont{
+    color: #b7b7b7;
+}
+.meaubox input{
+    width: 584px;
+    height: 37px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    background: #282828;
+    outline: none;
+    border: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.meaubox input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #999999;
+}
+.meaubox .sousuo{
+    width: 28px;
+    height: 37px;
+    position: absolute;
+    top: 48px;
+    left: 76px;
+}
+.meaubox .sousuo .iconfont{
+    font-size: 16px;
+    color: #979797;
+    text-align: center;
+    line-height: 37px;
+}
+.meaubox .bottom{
+     width: 100%;
+     height: 264px;
+    padding: 0 65px;
+    box-sizing: border-box;
+     margin: 4px 0 0;
+ }
+.meaubox .bottom li{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #282828;
+    box-sizing: border-box;
+}
+.meaubox .bottom li:last-child{
+    border-bottom: none;
+}
+.meaubox .bottom li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 14px;
+    color: white;
+    line-height: 43px;
+
+}
+.meaubox .bottom li:hover a{
+    color: #b7b7b7;
+}
+/*主要部分开始*/
+.list,.list ul{
+    width: 100%;
+    height: auto;
+}
+.list,.list ul a{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.list ul li{
+    width: 100%;
+    background: #f5f5f5;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+.list ul .iphone{
+    background: #fafafa;
+
+}
+.list ul li h3{
+    color: #333;
+    text-align: center;
+
+}
+.list ul li h4{
+    color: #333333;
+    text-align: center;
+    font-weight: normal;
+}
+.list ul li .buy{
+    color: #0070d2;
+    margin: 0 auto;
+}
+.list ul li .buy .left{
+    float: left;
+}
+.list ul li .buy .left:hover{
+    text-decoration: underline;
+}
+.list ul li .buy .right{
+    float: right;
+}
+.list ul li .buy .right:hover{
+    text-decoration: underline;
+}
+.list ul .Mac h3,section ul .Mac h4,section ul .Mac .buy{
+    color: white;
+}
+
+/*六宫格开始*/
+.list1,.list1 ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.list1 ul a{
+    width: 100%;
+    height: auto;
+    display: block
+}
+.list1 ul li{
+    box-sizing: border-box;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.list1 ul li a h4{
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+.list1 ul li:nth-child(2) a h4,
+.list1 ul li:nth-child(2) a h5,
+.list1 ul li:nth-child(3) a h4,
+.list1 ul li:nth-child(3) a h5,
+.list1 ul li:nth-child(6) a h4,
+.list1 ul li:nth-child(6) a h5{
+    color: white;
+}
+.list1 ul li a h5{
+    width: 100%;
+    color: #111;
+    text-align: center;
+    font-weight: 400;
+}
+.list1 ul li .buy{
+    color: #0070d2;
+    margin: 0 auto;
+}
+.list1 ul li .buy .left{
+    float: left;
+}
+.list1 ul li .buy .left:hover{
+    text-decoration: underline;
+}
+.list1 ul li .buy .right{
+    float: right;
+}
+.list1 ul li .buy .right:hover{
+    text-decoration: underline;
+}
+.list1 .movie{
+    width: 200px;
+    height: 20px;
+    margin: 8px auto 0;
+}
+.list1 .movie .left{
+     width: 84px;
+     height: 100%;
+     float: left;
+ }
+.list1 .movie .right{
+    width: 84px;
+    height: 100%;
+    float: right;
+}
+.list1 .movie .text{
+    display: block;
+    width: 63px;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+}
+.list1 .movie .text:hover{
+    text-decoration: underline;
+}
+.list1 .movie .iconfont{
+    color: white;
+    height: 20px;
+    width: 21px;
+    font-size: 18px;
+    float: right;
+    display: block;
+    margin-top: -12px;
+}
+.list1 .movie .icon-youjiantou{
+    font-size: 16px;
+    margin-top: -11px
+}
+.list1 .movie1{
+    width: 84px;
+}
+/*六宫格结束*/
+
+/*底部开始*/
+.footer{
+    width: 100%;
+    background: #f2f2f2;
+    box-sizing: border-box;
+}
+.footer .big{
+    width: 100%;
+}
+.footer .big .big_li{
+    width: 20%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.footer .small .small_li a{
+    color: #596368;
+    line-height: 25px;
+}
+.footer .small .small_li:first-child{
+    color: #000;
+}
+.footer .box1{
+    width: 100%;
+    height: 33px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 33px;
+}
+.footer .box1 a{
+    color: #0070c9;
+}
+.box1 a:hover{
+    text-decoration: underline;
+}
+.footer .box2{
+    width: 100%;
+    height: 34px;
+}
+.footer .box2 .left{
+    width: 250px;
+    height: 100%;
+    font-size: 10px;
+    color: #888888;
+    float: left;
+    line-height: 34px;
+}
+.footer .box2 .right{
+    width: 365px;
+    height: 100%;
+    margin-left: 24px;
+    float: left;
+}
+.footer .right a:hover{
+    text-decoration: underline;
+}
+.footer1 .right a:hover{
+    text-decoration: underline;
+}
+.footer .box2 .last{
+    width: 45px;
+    height: 100%;
+    float: right;
+    font-size: 10px;
+    line-height: 34px;
+    color: #888;
+}
+.footer .last .img{
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/16.png");
+    background-position: center;
+    float: left;
+    margin: 9px 0;
+}.footer .last .word{
+     font-size: 10px;
+     line-height: 34px;
+     color: #888;
+     float: right;
+ }
+.footer .box2 .right a{
+    line-height: 34px;
+    font-size: 10px;
+    color: #555;
+}
+.footer .box2 .right span{
+    color: #d6d6d6;
+    margin: 0 10px;
+}
+.footer .box3{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    color: #888;
+    line-height: 34px;
+    border-bottom: 7px solid #f2f2f2;
+    box-sizing: border-box;
+}
+.footer1{
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    padding: 0 17px;
+    box-sizing: border-box;
+    /*background: red;*/
+}
+.footer1 .big{
+    width: 100%;
+    /*height: 268px;*/
+    height: auto;
+    background: #f2f2f2;
+}
+.footer1 .big li{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #d6d6d6;
+    overflow: hidden;
+    cursor: pointer;
+}
+.footer1 .big li h3{
+    width: auto;
+    height: 100%;
+    font-size: 8px;
+    line-height: 37px;
+    color: #333;
+    float: left;
+}
+.footer1 .big li h2{
+    width: auto;
+    height: 100%;
+    font-size: 12px;
+    line-height: 37px;
+    color: #333;
+    float: right;
+    transition: all .5s;
+}
+.footer1 .box1{
+    width: 100%;
+    height: 53px;
+    line-height: 53px;
+    /*background: blue;*/
+    margin-top: 5px;
+}
+.footer1 .box1 a{
+    color: #0070c9;
+}
+.footer1 .left{
+    width: 100%;
+    height: 26px;
+    font-size: 10px;
+    color: #888888;
+    line-height: 26px;
+}
+.footer1 .right{
+    width: 100%;
+    height: 24px;
+}
+.footer1 .last{
+    width: 45px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 18px;
+    color: #888;
+    margin-bottom: 12px;
+}
+.footer1 .last .img{
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/16.png");
+    background-position: center;
+    float: left;
+}.footer1 .last .word{
+     font-size: 10px;
+     line-height: 18px;
+     color: #888;
+     float: right;
+ }
+.footer1 .right a{
+    line-height: 24px;
+    font-size: 8px;
+    color: #555;
+}
+.footer1 .right span{
+    color: #d6d6d6;
+    margin: 0 6px;
+}
+.footer1 .box3{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    color: #888;
+    line-height: 20px;
+    border-bottom: 20px solid #f2f2f2;
+    box-sizing: border-box;
+}
+.footer .small .small_li a:hover{
+    text-decoration: underline;
+}
+.footer1 .big li .small{
+    width: 100%;
+    height: 310px;
+    padding-top: 42px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    /*display: none;*/
+}
+.footer1 .big li .small1{
+    height: 371px;
+}
+.footer1 .big li .small2{
+    height: 122px;
+}
+.footer1 .big li .small3{
+    height: 145px;
+}
+.footer1 .big li .small4{
+    height: 203px;
+}
+.footer1 .big li .small5{
+    height: 175px;
+}
+.footer1 .big li .small6{
+    height: 233px;
+}
+.footer1 .small li{
+    height: 28px;
+    border-bottom: none;
+}
+.footer1 .small li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.footer1 .small li:hover a{
+    text-decoration: underline;
+}
+.footer1 .small li{
+    line-height: 28px;
+}
+/*底部结束*/
+/* >1024  */
+@media screen and (min-width: 1024px){
+    main{
+        width: 1024px;
+    }
+    nav ul{
+        width: 1024px;
+    }
+    .max{
+        display: block;
+    }
+    .min{
+        display: none;
+    }
+    .list ul li{
+        height: 691px;
+    }
+    .list ul li h3{
+        font-size: 56px;
+        margin: 123px 0 6px;
+    }
+    .list ul li h4{
+        font-size: 27px;
+        margin: 0 auto 8px;
+    }
+    .list ul li .buy{
+        width: 200px;
+        height: 25px;
+    }
+    .list ul li .buy .left,.list ul li .buy .right{
+        font-size: 20px;
+    }
+    .list ul .img_box{
+        width: 1068px;
+        height: 337px;
+        margin: 80px auto 0;
+        background-size: 1068px 337px;
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    .list ul .iphone .img_box{
+        background-image: url("../img/iphone_x_large.jpg");
+    }
+    .list ul .iPad .img_box{
+        background-image: url("../img/ipad_large.jpg");
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    .list ul .Mac{
+        background-image: url("../img/macbook_pro_performance_large.jpg");
+        background-position: center;
+    }
+    .list ul .iPad h3{
+        margin-top: 93px;
+    }
+    .list1 ul li{
+        width: 50%;
+        height: 593px;
+        border-left: 12px solid #fff;
+        border-right: 6px solid #fff;
+        border-bottom: 12px solid #fff;
+    }
+    .list1 ul li:nth-child(2n){
+        border-left: 6px solid #fff;
+        border-right: 12px solid #fff;
+    }
+    .list1 ul li a h4{
+        font-size: 40px;
+        margin-top: 52px;
+    }
+    .list1 ul li a h5{
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .list1 ul li:nth-child(1){
+        background-image: url("../img/l2.jpg");
+    }
+    .list1 ul li:nth-child(2){
+        background-image: url("../img/l1.jpg");
+    }
+    .list1 ul li:nth-child(3){
+        background-image: url("../img/l3.jpg");
+    }
+    .list1 ul li:nth-child(4){
+        background: #f9f0eb;
+        position: relative;
+    }
+    .list1 ul li .buy{
+        width: 150px;
+        height: 14px;
+        margin-top: 12px;
+    }
+    .list1 ul li .buy .left,.list1 ul li .buy .right{
+        font-size: 14px;
+    }
+    .list1 ul .pic_box1{
+        width: 292px;
+        height: 391px;
+        background-image: url("../img/iphone_8_large.jpg");
+        position: absolute;
+        bottom:0;
+        left: calc(50% + 0px);
+        right: auto;
+        top:auto;
+        transform: translatex(-50%);
+    }
+    .list1 ul .pic_box2{
+        width: 283px;
+        height: 386px;
+        background-image: url("../img/three_rings_large.jpg");
+        position: absolute;
+        bottom:0;
+        left: calc(50% + 0px);
+        right: auto;
+        top:auto;
+        transform: translatex(-50%);
+    }
+    .list1 ul li:nth-child(5){
+        background-image: url("../img/trade_up_large.jpg");
+    }
+    .list1 ul li:nth-child(6){
+        background:#000;
+        position: relative;
+    }
+    .list1 ul li:nth-child(3) a h4{
+        margin-top: 408px;
+    }
+    .list1 ul li:nth-child(2) a h4{
+        margin-top: 434px;
+    }
+    /*底部*/
+    .footer{
+        height: 467px;
+        padding: 0 24%;
+    }
+    .footer .big{
+        height: 364px;
+
+    }
+    .footer .big .big_li{
+        padding-top: 35px;
+    }
+    .footer .small .small_li a{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .footer .small .small_li:first-child{
+        font-size: 12px;
+    }
+    .footer{
+        display: block;
+    }
+    .footer1{
+        display: none;
+    }
+    .bag{
+        right: 16%;
+    }
+    .bag li:first-child{
+        right: 136px;
+    }
+}
+
+/* < 1024  */
+@media screen and (max-width: 1024px){
+    main{
+        padding-right: 22px;
+    }
+    nav ul{
+        padding: 0 22px;
+    }
+    .max{
+        display: block;
+    }
+    .min{
+        display: none;
+    }
+    .list ul li{
+        height: 589px;
+    }
+    .list ul .iphone h3{
+        font-size: 44px;
+        margin: 107px 0 18px;
+    }
+    .list ul .iPad h3{
+        font-size: 44px;
+        margin: 118px 0 17px;
+    }
+    section ul .Mac h3{
+        font-size: 44px;
+        margin: 103px 0 17px;
+    }
+    .list ul li h4{
+        font-size: 18px;
+        margin: 0 auto 21px;
+    }
+    .list ul li .buy{
+        width: 190px;
+        height: 18px;
+    }
+    .list ul li .buy .left,.list ul li .buy .right{
+        font-size: 18px;
+    }
+    .list ul .img_box{
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    .list ul .iphone .img_box{
+        margin: 66px auto 0;
+        background-image: url("../img/iphone_x_medium.jpg");
+        width: 736px;
+        height: 336px;
+        background-size: 736px 336px;
+    }
+    .list ul .iPad .img_box{
+        margin: 60px auto 0;
+        background-image: url("../img/ipad_medium.jpg");
+        width: 650px;
+        height: 325px;
+        background-size: 650px 325px;
+    }
+    .list ul .Mac{
+        background-image: url("../img/macbook_pro_performance_medium.jpg");
+        background-position: center;
+    }
+    .list1 ul li{
+        width: 50%;
+        height: 502px;
+        border-left: 12px solid #fff;
+        border-right: 6px solid #fff;
+        border-bottom: 12px solid #fff;
+    }
+    .list1 ul li:nth-child(2n){
+        border-left: 6px solid #fff;
+        border-right: 12px solid #fff;
+    }
+    .list1 ul li a h4{
+        font-size: 32px;
+        margin-top: 42px;
+    }
+    .list1 ul li:nth-child(2) a h4,
+    .list1 ul li:nth-child(3) a h4{
+        margin-top: 410px;
+    }
+    .list1 ul li a h5{
+        font-size: 19px;
+        margin-top: 3px;
+    }
+    .list1 ul li:nth-child(1){
+        background-image: url("../img/shop_for_college_small.jpg");
+    }
+    .list1 ul li:nth-child(2){
+        background-image: url("../img/behind_the_mac_makato_medium.jpg");
+    }
+    .list1 ul li:nth-child(3){
+        background-image: url("../img/iphone_x_a11_medium.jpg");
+    }
+    .list1 ul li:nth-child(4){
+        background: #f9f0eb;
+        position: relative;
+    }
+    .list1 ul li .buy{
+        width: 150px;
+        height: 14px;
+        margin-top: 12px;
+    }
+    .list1 ul li .buy .left,.list1 ul li .buy .right{
+        font-size: 14px;
+    }
+    .list1 ul .pic_box1{
+        width: 229px;
+        height: 305px;
+        background-image: url("../img/iphone_8_medium.jpg");
+        position: absolute;
+        bottom:0;
+        left: calc(50% + 0px);
+        right: auto;
+        top:auto;
+        transform: translatex(-50%);
+    }
+    .list1 ul .pic_box2{
+        width: 219px;
+        height: 292px;
+        background-image: url("../img/three_rings_medium.jpg");
+        position: absolute;
+        bottom:0;
+        left: calc(50% + 0px);
+        right: auto;
+        top:auto;
+        transform: translatex(-50%);
+    }
+    .list1 ul li:nth-child(5){
+        background-image: url("../img/trade_up_medium.jpg");
+    }
+    .list1 ul li:nth-child(6){
+        background:#000;
+        position: relative;
+    }
+    .list1 ul li:nth-child(3) a h4{
+        margin-top: 335px;
+    }
+    .list1 ul li:nth-child(2) a h4{
+        margin-top: 339px;
+    }
+    /*底部*/
+    .footer{
+        height: 448px;
+        padding: 0 25px;
+    }
+    .footer .big{
+        height: 341px;
+
+    }
+    .footer .big .big_li{
+        padding-top: 18px;
+    }
+    .footer .small .small_li a{
+        font-size: 8px;
+        line-height: 25px;
+    }
+    .footer .small .small_li:first-child{
+        font-size: 10px;
+    }
+    .footer{
+        display: block;
+    }
+    .footer1{
+        display: none;
+    }
+    .bag{
+        right: 5px;
+    }
+    .bag li:first-child{
+        right: 18px;
+    }
+}
+/* <768 */
+@media screen and (max-width: 768px){
+    .max{
+        display: none;
+    }
+    .min{
+        display: block;
+    }
+    .list ul .iphone h3{
+          font-size: 32px;
+          font-weight: 600;
+          margin: 32px 0 2px;
+      }
+    .list ul .iphone h4{
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0 auto 6px;
+    }
+    .list ul .iphone .buy{
+        width: 165px;
+        height: 16px;
+    }
+    .list ul .iPad h3{
+        font-size: 32px;
+        font-weight: 600;
+        margin: 32px 0 2px;
+    }
+    .list ul .iPad h4{
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0 auto 6px
+    }
+    .list ul .iPad .buy{
+        width: 165px;
+        height: 16px;
+    }
+    .list ul .Mac h3{
+        font-size: 32px;
+        font-weight: 600;
+        margin: 88px 0 2px;;
+    }
+    .list ul .Mac h4{
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0 auto 6px
+    }
+    .list ul .Mac .buy{
+        width: 165px;
+        height: 16px;
+    }
+    .list ul li .buy .left,.list ul li .buy .right{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .list ul li{
+        height: 500px;
+    }
+    .list ul .img_box{
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    .list ul .iphone .img_box{
+        background-image: url("../img/iphone_x_small.jpg");
+        width: 320px;
+        height: 353px;
+        margin: 20px auto 0;
+        background-size: 320px 353px;
+    }
+    .list ul .iPad .img_box{
+        background-image: url("../img/ipad_small.jpg");
+        width: 320px;
+        height: 353px;
+        margin: 15px auto 0;
+        background-size: 320px 353px;
+    }
+    .list ul .Mac{
+        background-image: url("../img/macbook_pro_performance_small.jpg");
+        background-position: center;
+    }
+    .list1 ul li{
+        width: 100%;
+        height: 513px;
+        border-left: none;
+        border-right: none;
+    }
+    .list1 ul li:nth-child(2n){
+        border-left: none;
+        border-right: none;
+    }
+    .list1 ul li:nth-child(1){
+        background-image: url("../img/shop_for_college_small.jpg");
+    }
+    .list1 ul li:nth-child(2){
+        background-image: url("../img/behind_the_mac_makato_small.jpg");
+    }
+    .list1 ul li:nth-child(3){
+        background-image: url("../img/iphone_x_a11_small.jpg");
+    }
+    .list1 ul li:nth-child(4){
+        background: #f9f0eb;
+        position: relative;
+    }
+    .list1 ul .pic_box1{
+        width: 219px;
+        height: 297px;
+        background-image: url("../img/iphone_8_small.jpg");
+        position: absolute;
+        bottom:0;
+        left: calc(50% + 0px);
+        right: auto;
+        top:auto;
+        transform: translatex(-50%);
+
+
+    }
+    .list1 ul .pic_box2{
+        width: 219px;
+        height: 297px;
+        background-image: url("../img/three_rings_small.jpg");
+        position: absolute;
+        bottom:0;
+        left: calc(50% + 0px);
+        right: auto;
+        top:auto;
+        transform: translatex(-50%);
+
+    }
+    .list1 ul li:nth-child(5){
+        background-image: url("../img/trade_up_small.jpg");
+    }
+    .list1 ul li:nth-child(6){
+        background:#000;
+        /*position: relative;*/
+    }
+    .list1 ul li:nth-child(3) a h4{
+        margin-top: 335px;
+    }
+    .list1 ul li:nth-child(2) a h4{
+        margin-top: 372px;
+    }
+    .footer{
+        display: none;
+    }
+    .footer1{
+        display: block;
+    }
+    .bag{
+        right: 5px;
+    }
+    .bag li:first-child{
+        right: 18px;
+    }
+}
